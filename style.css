@@ -23,6 +23,14 @@ a {
     text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #7dd3fc;
+    outline-offset: 3px;
+}
+
 section {
     padding: 90px 0;
 }
@@ -450,6 +458,13 @@ section {
     color: #94a3b8;
 }
 
+.project-card .project-disclaimer {
+    padding-left: 12px;
+    border-left: 2px solid #38bdf8;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -596,6 +611,12 @@ section {
     margin-top: 5px;
 }
 
+.form-note {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin: 15px 0 0;
+}
+
 #successMessage {
     color: #86efac;
     margin-top: 20px;
@@ -692,6 +713,17 @@ footer {
         text-align: center;
     }
 
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
 }
 
 
